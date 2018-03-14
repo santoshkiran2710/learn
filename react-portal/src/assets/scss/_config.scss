@@ -1,0 +1,41 @@
+/** VAR definitions **/
+$turquoise: #1abc9c;
+$emerald: #2ecc71;
+$bluepete: #3498db;
+$amethyst:#9b59b6;
+$asphalt:#34495e;
+$greensea:#16a085;
+$nephritis:#27ae60;
+$white: #ffffff;
+$silver:#bdc3c7;
+$red:#e74c3c;
+
+/*
+Mixin
+*/
+
+@mixin translateY($e){
+	-webkit-transform: translateY($e);
+	-moz-transform: translateY($e);
+	transform: translateY($e);
+}
+
+@mixin transition($e){
+	-webkit-transition:$e;
+	-moz-transition:$e;
+	transition:$e;
+}
+
+body {
+	font-family: 'Open-Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.container-fluid{
+	line-height: 24px;
+}
+
+
+

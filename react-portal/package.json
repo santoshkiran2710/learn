@@ -1,0 +1,33 @@
+{
+  "name": "react-portal",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "react": "^16.0.0",
+    "react-billboardjs": "^1.1.1",
+    "react-dom": "^16.0.0",
+    "react-loader": "^2.4.2",
+    "react-scripts": "1.0.14",
+    "reactstrap": "^5.0.0-alpha.3",
+    "util": "^0.10.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-util": "latest",
+    "gulp-sass": "latest",
+    "gulp-coffee": "latest",
+    "gulp-uglify": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-rename": "latest",
+    "gulp-changed": "latest"
+  }
+}

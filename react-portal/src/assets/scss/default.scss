@@ -1,0 +1,140 @@
+@import "_config.scss";
+
+//used for header and menu options
+.header{
+	position: relative;
+	display:block;
+	width: 100%;
+	background: $asphalt;
+	color: $white;
+	height: 100px;
+	float: left;
+
+	.logo{
+		/* position: absolute;
+		top: 50%; left: 20px;
+		@include translateY(-50%); */
+	}
+	.logoimg{
+		/* position: absolute;
+		top: 50%; left: 20px;
+		height:70px;
+		width: 70px;
+		@include translateY(-50%); */
+		position: relative;
+		top: 50px; left: 20px;
+		display: block;
+		height:70px;
+		width: 300px;
+		@include translateY(-50%);
+		float: left;
+		background-color: $white;
+
+	}
+	/* nav,
+	nav ul,
+	nav ul li{
+		margin: 0;
+		padding: 10px;
+	} */
+	nav{
+		position: absolute;
+		top: 50%; right: 20px;
+		@include translateY(-50%);
+
+		&:ul{
+			margin: 20px;
+		} 
+	}
+	li{
+		list-style-type: none;
+		display: inline-flex;
+		padding-right: 15px;
+	}
+
+	
+	
+	a{
+		font-size: 12px;
+		line-height: normal;
+		color: $amethyst;
+		text-decoration: none;
+		@include transition(.4s ease-in-out);
+		cursor: pointer;
+		
+		&:hover{
+			color: $nephritis;
+			@include transition(.4s ease-in-out);
+		}
+	}
+}
+//Used for home screen
+.App {
+	background-color: $silver;
+	float: left;
+	height:80vh;
+}
+
+//used for footer
+.footer{
+	display:block;
+	width:100%;
+	background: $asphalt;
+	color: $white;
+	text-align: center;
+	font-size: 12px;
+	clear: both;
+}
+
+.btnLogin{
+	position: absolute;
+	left: 20px;
+}
+.errorMessage {
+	display: block;
+	font-size:18px;
+	color: $red;
+	alignSelf: 'center';
+	paddingHorizontal: 10;
+	marginBottom: 20;
+}
+
+*{box-sizing: border-box;}
+
+.wrapper {
+	display: grid;
+	grid-gap: 20px; //=> short hand for grid-column-gap and grid-row-gap
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 200px 120px;
+	grid-auto-rows: 70px;
+	background-color: transparent;
+	color: #444;
+}
+.box {
+	background-color: #444;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 150%;
+
+}
+
+.a {
+	grid-column: 1 / span 2;
+}
+.b {
+	grid-column: 3 ;
+	grid-row: 1 / span 2;
+}
+.c {
+	grid-column: 1 ;
+	grid-row: 2 ;
+}
+.d {
+	grid-column: 2 ;
+	grid-row: 2 ;
+}
+
+.ReactTable{
+	height: 500px;
+}
