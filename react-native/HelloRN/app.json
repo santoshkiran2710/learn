@@ -1,0 +1,14 @@
+{
+   "expo": {
+    "name": "Hello Portal",
+    "version": "1.0.0",
+    "slug": "hello-portal-slug",
+    "sdkVersion": "25.0.0",
+    "ios": {
+      "bundleIdentifier": "com.ios.portal"
+    },
+    "android": {
+      "package": "com.andy.portal"
+    }
+   }
+ }
