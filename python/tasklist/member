@@ -1,0 +1,20 @@
+select * from member
+
+truncate member
+
+insert into member (memberid, membername) values (nextval('member_id'), 'dsantoshkiran@gmail.com')
+insert into member (memberid, membername) values (nextval('member_id'), 'fani@gmail.com')
+insert into member (memberid, membername) values (nextval('member_id'), 'tsunami@gmail.com')
+
+insert into member (memberid, membername) values (1, 'fani@gmail.com')
+
+
+CREATE SEQUENCE member_id
+START 1
+INCREMENT 1
+MINVALUE 1
+OWNED BY member.memberid;
+
+
+
+delete from member where membername='tsunami@gmail.com'
